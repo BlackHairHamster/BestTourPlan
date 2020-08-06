@@ -15,7 +15,7 @@ $title = "Новое обращение - Best Tour Plan";
 $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
+<b>Телефон:</b> $phone<br>
 <b>Сообщение:</b><br>$message<br>
 <b>Почта:</b> $mail
 ";
@@ -40,7 +40,7 @@ try {
     $mail->setFrom('FireHairHamster@yandex.ru', 'Дмитрий Петров'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('FireHairHamster@yandex.ru');
+    $mail->addAddress('goncharovnikita713@gmail.com');
 
     // Отправка сообщения
     $mail->isHTML(true);
