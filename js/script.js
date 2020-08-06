@@ -41,41 +41,41 @@ $(document).ready(function () {
 		},
 	});
 
-	ymaps.ready(init);
+	// ymaps.ready(init);
 
-	function init() {
-		var myMap = new ymaps.Map("map", {
-			center: [7.890746, 98.294784],
-			zoom: 15,
-		});
-		var myGeoObject = new ymaps.GeoObject({
-			geometry: {
-				type: "Point",
-				coordinates: [7.890746, 98.294784],
-			},
-			// Свойства.
-			properties: {
-				// Контент метки.
-				iconContent: "DoubleTree by Hilton ",
-			},
-		}, {
-			// Опции.
-			// Иконка метки будет растягиваться под размер ее содержимого.
-			preset: "islands#governmentCircleIcon",
-		});
+	// function init() {
+	// 	var myMap = new ymaps.Map("map", {
+	// 		center: [7.890746, 98.294784],
+	// 		zoom: 15,
+	// 	});
+	// 	var myGeoObject = new ymaps.GeoObject({
+	// 		geometry: {
+	// 			type: "Point",
+	// 			coordinates: [7.890746, 98.294784],
+	// 		},
+	// 		// Свойства.
+	// 		properties: {
+	// 			// Контент метки.
+	// 			iconContent: "DoubleTree by Hilton ",
+	// 		},
+	// 	}, {
+	// 		// Опции.
+	// 		// Иконка метки будет растягиваться под размер ее содержимого.
+	// 		preset: "islands#governmentCircleIcon",
+	// 	});
 
-		myMap.geoObjects.add(
-			new ymaps.Placemark(
-				[7.890747, 98.295131], {
-					balloonContent: "<strong>DoubleTree by Hilton Phucket Banthai Resort </strong>",
-					iconCaption: "DoubleTree by Hilton Phucket Banthai Resort",
-				}, {
-					preset: "islands#greenDotIconWithCaption",
-					iconColor: "red",
-				}
-			)
-		);
-	}
+	// 	myMap.geoObjects.add(
+	// 		new ymaps.Placemark(
+	// 			[7.890747, 98.295131], {
+	// 				balloonContent: "<strong>DoubleTree by Hilton Phucket Banthai Resort </strong>",
+	// 				iconCaption: "DoubleTree by Hilton Phucket Banthai Resort",
+	// 			}, {
+	// 				preset: "islands#greenDotIconWithCaption",
+	// 				iconColor: "red",
+	// 			}
+	// 		)
+	// 	);
+	// }
 
 	const menuButton = $(".menu-button");
 	menuButton.on("click", function () {
@@ -107,25 +107,6 @@ $(document).ready(function () {
 		modalOverlay.removeClass("modal__overlay_visible");
 		modalDialog.removeClass("modal__dialog_visible");
 	}
-
-	// обработка форм
-	// $(".modal__form").validate({
-	// 	
-	// 	messages: {
-	// 		name: {
-	// 			required: "Укажите свое имя",
-	// 			minlength: "Имя должно содержать хотя бы 2 буквы"
-	// 		},
-	// 		email: {
-	// 			required: "Укажите свой email",
-	// 			minlength: "Почта должна содержать хотя бы 8 символов"
-	// 		},
-	// 		phone: {
-	// 			required: "Укажите свой номер телефона",
-	// 			minlength: "Телефон должен содержать хотя бы 11 цифр"
-	// 		},
-	// 	},
-	// });
 
 	$(".form").each(function () {
 		$(this).validate({
