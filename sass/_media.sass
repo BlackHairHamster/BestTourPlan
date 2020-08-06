@@ -221,7 +221,7 @@
                 left: 0 
                 top: 0
                 right: 0
-                z-index: 100
+                z-index: 102
         &__search
             margin-right: 0
         &__search,
@@ -236,16 +236,19 @@
                 display: flex
         &-bottom
             display: none
-            position: fixed
-            padding-top: 30px
-            top: 78px
-            left: 0
-            right: 0
-            bottom: 0
             &_visible
+                position: fixed
                 display: block
+                top: 78px
+                left: 0
+                right: 0
+                bottom: 0
+                background: $dark
+                padding-top: 30px
         &-menu
             flex-direction: column
+            
+            z-index: 102
             &__item
                 margin-bottom: 20px
                 &_mobile
