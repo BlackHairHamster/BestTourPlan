@@ -1,0 +1,91 @@
+.modal
+    &__overlay
+        position: fixed
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        z-index: 99
+        background-color: rgba(0, 143, 223, 0.39)
+        visibility: hidden
+        opacity: 0
+        transition: opacity 0.3s
+        &_visible
+            visibility: visible
+            opacity: 1
+            transiton: opacity 0.3s
+    &__dialog
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        max-width: 478px
+        padding: 33px 88px
+        z-index: 100
+        background-color: $dark
+        color: $light
+        border-radius: 8px
+        visibility: hidden
+        opacity: 0
+        transition: opacity 0.5s
+        &_visible
+            visibility: visible
+            opacity: 1
+            transiton: opacity 0.3s
+    &__close
+        position: absolute
+        right: 18px
+        top: 17px
+        text-decoration: none
+        cursor: pointer
+    &__title
+        text-align: center
+    &__contact
+    &__form
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+    
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+        text-transform: uppercase
+        &_send
+            margin-bottom: 15px
+    &__input
+        width: 100%
+        height: 50px
+        font-size: 12px
+        line-height: 15px
+        margin-top: 15px
+    &__message
+        width: 100%
+        max-width: 302px
+        min-hieght: 123px
+        max-height: 123px
+        font-size: 12px
+        line-height: 15px
+        margin-top: 15px
+    &__button
+        margin-top: 15px
+        min-width: 160px
+        min-height: 50px
+        padding: 18px 66px
+        font-style: normal
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        color: $light
+        cursor: pointer
+        border: none
+        outline: none
+        border-radius: 4px
+    &__tip
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        margin-top: 15px
+

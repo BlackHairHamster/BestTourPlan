@@ -1,0 +1,87 @@
+.navbar
+    background-color: #ffffff
+    &-top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-top: 40px
+        padding-bottom: 40px
+        &__menu-button
+            display: none
+            border: none
+            outline: none
+    &__search
+        margin-rigth: auto
+        margin-left: 108px
+
+    &-bottom
+        background-color: $dark
+    &-menu
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin: 0
+        padding: 31px 0
+        color: $light
+        &__item
+            list-style: none
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase
+            color: inherit
+            &_mobile
+                &_visible
+                    display: none
+        &__link
+            text-decoration: none
+            color: inherit
+    &__logo
+        width: 177px
+        height: 24px
+        object-fit: cover
+.search
+    display: flex
+    position: relative
+    overflow: hidden
+    &__input
+        width: 350px
+        height: 40px
+        background: $secondary
+        border-radius: 6px
+        border: none
+        font-size: 12px
+        line-height: 15px
+        padding-left: 23px
+        padding-right: 76px
+        outline: none
+
+    &__button
+        width: 65px
+        height: 40px
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: center
+        top: 0
+        right: 0
+        border: none;
+        outline: none
+        border-radius: 0px 6px 6px 0px
+        cursor: pointer
+.user
+    display: flex
+    align-items: center
+    height: 40
+    &__avatar
+        width: 40px;
+        height: 40px;
+        border-radius: 50%
+        object-fit: cover
+    &__name
+        font-size: 14px
+        line-height: 18px
+        color: $text-color
+        margin-left: 18px
+
+

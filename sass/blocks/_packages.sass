@@ -1,0 +1,140 @@
+.packages
+    padding: 0 0 70px 0
+    &__title
+        margin-bottom: 65px
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        color: $text-color
+    &__wrapper
+        width: 100%
+        height: 1130px
+        display: grid
+        grid-template-columns: 350px 350px 350px
+        grid-template-rows: 500px 500px
+        column-gap: 30px
+        row-gap: 30px
+          
+.package
+    display: flex
+    flex-direction: column
+    align-items: center
+    border-radius: 8px
+    overflow: hidden
+    &__offer
+        background-color: $primary
+        color: $light
+        padding: 6px 10px
+        font-style: normal
+        font-weight: 600
+        font-size: 10.3068px
+        line-height: 13px
+    &__header
+        margin-bottom: 23px
+
+    &__title
+        margin: 0
+    &__preview 
+        position: relative
+        width: 100%
+        height: 50%
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__offer
+        position: absolute
+        top: 26px
+        left: 0
+        border-radius: 0px 4px 4px 0px
+    &__info
+        display: flex
+        flex-direction: column
+        background: $dark
+        color: $light
+        width: 100%
+        height: 50%
+        padding: 30px 21px 30px 32px
+        &_short
+            margin-bottom: 13px
+    &__rating
+        margin-bottom: 5px
+    &__footer
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+    &__price
+        display: flex
+        flex-direction: column
+        &_old
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 18px
+            text-decoration-line: line-through
+            margin-bottom: 4px
+        &_new
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 30px
+    &__button
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 19px
+        border-radius: 4px
+        padding: 11px 27px 10px 26px
+        border: none
+        color: $light
+        cursor: pointer
+        over
+
+
+.package-1
+    grid-column-start: 1
+    grid-column-end: 3
+    flex-direction: row
+    align-items: flex-start
+    &__preview
+        width: 50%
+        height: 100%
+    &__info
+        padding: 46px 44px 35px 21px
+        width: 50%
+        height: 100%
+        &_full
+            margin: 0
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 160.6%
+            margin-bottom: 34px
+        &_short
+
+            margin-bottom: 26px
+    &__header
+        margin-bottom: 27px
+    &__title
+        margin: 0
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+.summary
+    display: flex
+    align-items: center
+    margin-bottom: 11px
+    &__icon
+        margin-right: 14px
+    &__description
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+    
+    
+
