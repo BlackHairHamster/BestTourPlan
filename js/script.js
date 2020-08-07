@@ -132,4 +132,25 @@ $(document).ready(function () {
 	$('.tel-number').mask('+7 (999) 999-99-99');
 
 	AOS.init();
+
+
+	const mapActive = `
+	<iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0412755648717!2d98.29254741501143!3d7.890750807947032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1596715680981!5m2!1sru!2sru"
+        width="100%" height="213" style="border:0;" allowfullscreen="" aria-hidden="false"
+		tabindex="0">
+	</iframe>
+	`;
+
+
+	var source = document.body.innerHTML;
+	var changeableMap = `<img src="img/map-preview.jpg" class="map__preview">`;
+	var changed = source.replace(changeableMap, mapActive);
+
+	const mapPreview = $('.map__preview');
+	mapPreview.on('mouseover', function () {
+		console.log('click');
+		document.body.innerHTML = changed;
+	});
+
 });
