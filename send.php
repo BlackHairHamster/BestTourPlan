@@ -41,7 +41,7 @@ try {
 
 
     // Получатель письма
-    $mail->addAddress('ivanfomin2005@gmail.com');
+    $mail->addAddress('FireHairHamster@yandex.ru');
     // $mail->addAddress('goncharovnikita713@gmail.com');
 
     // Отправка сообщения
