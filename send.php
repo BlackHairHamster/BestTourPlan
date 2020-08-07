@@ -26,7 +26,7 @@ try {
     $mail->isSMTP();
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    // $mail->SMTPDebug = 2;
+    $mail->SMTPDebug = 2;
     $mail->Debugoutput = function ($str, $level) {
         $GLOBALS['status'][] = $str;
     };
@@ -39,8 +39,10 @@ try {
     $mail->Port       = 465;
     $mail->setFrom('FireHairHamster@yandex.ru', 'Дмитрий Петров'); // Адрес самой почты и имя отправителя
 
+
     // Получатель письма
-    $mail->addAddress('goncharovnikita713@gmail.com');
+    $mail->addAddress('ivanfomin2005@gmail.com');
+    // $mail->addAddress('goncharovnikita713@gmail.com');
 
     // Отправка сообщения
     $mail->isHTML(true);
