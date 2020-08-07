@@ -147,7 +147,9 @@ $(document).ready(function () {
 
 	const mapPreview = $(".map__preview");
 	mapPreview.on("mouseover", function () {
-		console.log("click");
+		document.body.innerHTML = changed;
+	});
+	mapPreview.on("click", function () {
 		document.body.innerHTML = changed;
 	});
 });
