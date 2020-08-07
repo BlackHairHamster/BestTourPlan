@@ -119,7 +119,7 @@ $(document).ready(function () {
 				email: {
 					required: "We need your email address",
 					minlength: jQuery.validator.format("At least 8 characters required!"),
-					email: "Your email address must be in the format of name@domain.com"
+					email: "Your email address must be in the format of name@domain.com",
 				},
 				phone: {
 					required: "We need your tel number",
@@ -129,10 +129,9 @@ $(document).ready(function () {
 			},
 		});
 	});
-	$('.tel-number').mask('+7 (999) 999-99-99');
+	$(".tel-number").mask("+7 (999) 999-99-99");
 
 	AOS.init();
-
 
 	const mapActive = `
 	<iframe
@@ -142,15 +141,13 @@ $(document).ready(function () {
 	</iframe>
 	`;
 
-
 	var source = document.body.innerHTML;
-	var changeableMap = `<img src="img/map-preview.jpg" class="map__preview">`;
+	var changeableMap = `<img src="img/map-preview.jpg" alt="map" class="map__preview">`;
 	var changed = source.replace(changeableMap, mapActive);
 
-	const mapPreview = $('.map__preview');
-	mapPreview.on('mouseover', function () {
-		console.log('click');
+	const mapPreview = $(".map__preview");
+	mapPreview.on("mouseover", function () {
+		console.log("click");
 		document.body.innerHTML = changed;
 	});
-
 });
