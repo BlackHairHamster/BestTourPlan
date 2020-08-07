@@ -338,6 +338,11 @@
     .card
         width: 49%
         height: 255px 
+    .reviews
+        &-slider
+            &__text
+                max-width: 455px
+
 
 
     .packages
@@ -445,21 +450,27 @@
     .hotel-slider
         height: 250px
     // конец адаптива header
-    .reviews__title
-        font-size: 18px
-        line-height: 23px
+    .reviews
+        &__title
+            width: 245px
+            margin: 42px auto
+            font-size: 18px
+            line-height: 23px
     .card
         width: 100%
     .activities
         &__title
+
+            font-size: 18px
+            line-height: 23px
             margin-bottom: 36px
     .packages
         &__wrapper
-            height: 1894px
+            height: 2025px
             column-gap: 0
             row-gap: 19px
             grid-template-columns: 100%
-            grid-template-rows: 606px 303px 303px 303px
+            grid-template-rows: 650px 325px 325px 325px
     .package
         &__offer
             padding: 4px 8px
@@ -471,7 +482,7 @@
             font-size: 13.74px
             line-height: 17px
         &__info
-            padding: 11px 41px
+            padding: 15px 41px 20px 41px
             &_full
                 ffont-size: 9.8px
                 line-height: 160.6%
@@ -571,6 +582,7 @@
                 flex-direction: column
                 align-items: flex-start
                 flex-wrap: wrap
+                width: 100%
     .modal
         &__dialog
             width: 80%
@@ -625,17 +637,55 @@
             grid-row-gap: 20px
             width: 100%
             margin-bottom: 30px
-        &__social
-            &-networks
-                flex-wrap: wrap
+        &__logo
+            grid-row: 1
+            grid-column: 1
 
+        &__icon
+            &-wrapper
+                min-width: 30px
+                
+
+        &__social
+            &-network
+                flex-wrap: wrap
+                height: 67px
+
+            &-links
+                grid-row: 3
+                grid-column: 1
+
+        &__title
+            &_inline
+                grid-row: 2
+                grid-column: 1
+        &__legal
+            grid-row: 3
+            grid-column: 1
+        &__additional
+            grid-row: 4
+            grid-column: 1
+        &__categories
+            grid-row: 5
+            grid-column: 1
+        &__contact
+            &-details
+                grid-row: 6
+                grid-column: 1
+            &-form
+                grid-row: 7
+                grid-column: 1
         &__form
             flex-direction: column
             align-items: flex-start
-        
+
+        &__item
+            &_contact
+                align-self: center
         &__input
-            flex-basis: 100%
             width: 100%
+            &-group
+                width: 100%
         &__message
             width: 100%
             flex-shrink: 1
@@ -646,6 +696,15 @@
     .modal
         &__dialog
             width: 90%
+
+    .reviews
+        &__container
+            width: 281px
+        &__title
+            padding: 0px 10px
+        &-slider
+            &__text
+                max-width: 219px
 
 
 
