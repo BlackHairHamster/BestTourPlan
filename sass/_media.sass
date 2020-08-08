@@ -78,16 +78,21 @@
     .navbar
         &-top
             padding: 30px 0
+        &-bottom
+            padding: 22px 0
         &-menu
-            padding: 23px 0
-        &__search
-            margin-left: 0
-            margin-right: 73px
-            max-width: 340px
-        &-menu
+            padding: 0
             &__link
                 font-size: 12px
                 line-height: 15px
+        &__logo
+            width: 132.75px
+            height: 18px
+            margin-right: 0
+    .search
+        margin: 0 auto
+        &__input
+            width: 340px
     .logo
         width: 132.75px;
     // Конец адаптива header
@@ -100,13 +105,14 @@
             width: 100%
         &-right
             flex-direction: row
-        
+
     .booking
-        width: 340px
+        width: 49%
     .map
-        width: 340px
+        width: 49%
+        
         &__preview
-            width: 340px
+            width: 100%
     .reviews
         &-slider
             &__item
@@ -119,17 +125,17 @@
         &__card
             margin-bottom: 20px
     .card
-        width: 340px
+        width: 370px
         height: 255px
 
     .packages
         padding-top: 45px
         padding-bottom: 60px
         &__wrapper
-            height: 1246px
+            height: 1270px
             grid-template-columns: 350px 350px
-            grid-template-rows: 400px 400px
-            column-gap: 60px
+            grid-template-rows: 420px 400px
+            column-gap: 30px
             row-gap: 23px
     .package
         &__offer
@@ -151,7 +157,7 @@
                 line-height: 26px
         &__summary
             margin-bottom: 6px
-
+    
 
     .package-1
         &__offer
@@ -211,23 +217,29 @@
             width: 55%
         &__message
             max-width: 100%
+
 @media (max-width: 768px)
     .container
-        max-width: 576px
+        max-width: 700px
         width: 92%
-    // Начало адаптива header
     body
-        padding-top: 80px
+        padding-top: 90px
+
+    .navbar
+        &__logo
+            width: 132.75px
+            height: 18px
     .navbar
         &_mobile
             &_fixed
                 position: fixed
-                left: 0 
+                left: 0
                 top: 0
                 right: 0
                 z-index: 102
         &__search
             margin-right: 0
+            margin-left: 0
         &__search,
         &__user
             &_mobile
@@ -281,6 +293,99 @@
                 color: $light
                 margin-left: 0
                 margin-top: 10px
+    
+
+
+    .newsletter
+        padding: 92px 0
+    .reviews
+        &__title
+            font-style: normal
+            font-weight: bold
+            text-align: center
+            text-transform: uppercase
+            font-size: 30px
+            line-height: 38px
+    .footer
+        &-top
+            grid-column-gap: 40px
+        &__logo
+            width: 104px
+            height: 120.29px
+        &__contact
+            &-form
+                grid-column: span 5
+
+    .packages
+        padding: 61px 0 80px 0
+        &__title
+            font-size: 30px
+            font-size: 30px
+            line-height: 38px
+        &__wrapper
+            height: 1008px
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 320px 320px
+            column-gap: 30px
+            row-gap: 23px
+
+    .package
+        &__offer
+            padding: 4px 8px
+            font-size: 10px
+            line-height: 11px
+        &__header
+            margin-bottom: 13px
+        &__title
+            font-size: 13.8998px
+            line-height: 17px
+        &__info
+            padding: 5% 15px 15px 10%
+            &_full
+                font-size: 9.79958px
+                line-height: 160.6%
+                margin-bottom: 21px
+            &_short
+                margin-bottom: 8px
+        &__summary
+            margin-bottom: 4px
+        &__price
+            &_old
+                font-size: 9.04178px
+                line-height: 11px
+                margin-bottom: 3px
+            &_new
+                font-size: 15.5002px
+                line-height: 19px
+        &__button
+            padding: 8px 27px
+            font-size: 10.042px
+            line-height: 12px
+
+    .package-1
+        &__offer
+            padding: 5px 10px
+            font-size: 11.27px
+            line-height: 15px
+        &__header
+            margin-bottom: 16px
+        &__info
+            padding: 16px 16px 18px 33px
+            &_short
+                margin-bottom: 10px
+        &__summary
+            margin-bottom: 4px
+
+    .newsletter
+        padding: 92px 34px
+        &-wrapper
+            flex-wrap: wrap
+    .card
+        width: 340px
+        height: 255px
+    // 
+    
+
     // конец алаптива header
     // Начало адаптива блока hotel
     .hotel
@@ -300,113 +405,52 @@
                 margin-top: 0
             &__rating
                 display: none
-    .stars
-        flex-basis: auto
-    // Конец адаптива блока hotel
-    .hotel
-        &-slider
-            height: 350px
-        &-right
-            flex-direction: column
-            min-height: 450px
-    .booking
-        width: 100%
-    .map
-        width: 100%
-        &__preview
-            width: 100%
-    .newsletter
-        &-wrapper
-            max-width: 576px
-            width: 92%
-            flex-direction: column
-            align-items: flex-start
-    .reviews
-        &__title
-            font-size: 30px;
-            line-height: 38px;
-        &-slider
-            &__item
-                padding: 0 30px 30px
-                &:after, &:before
-                    display: none
-            &__button
-                top: 32px
-                left: 50%
-                transform: translate(-50%, 0)
-                &_prev
-                    margin-left: -105px
-                &_next
-                    margin-left: 105px
-    .card
-        width: 49%
-        height: 255px 
-    .reviews
-        &-slider
-            &__text
-                max-width: 455px
+    // .stars
+    //     flex-basis: auto
+    // // Конец адаптива блока hotel
+    // .hotel
+    //     &-slider
+    //         height: 350px
+    //     &-right
+    //         flex-direction: column
+    //         min-height: 450px
+    // .booking
+    //     width: 100%
+    // .map
+    //     width: 100%
+    //     &__preview
+    //         width: 100%
+    // .newsletter
+    //     &-wrapper
+    //         max-width: 576px
+    //         width: 92%
+    //         flex-direction: column
+    //         align-items: flex-start
+    // .reviews
+    //     &__title
+    //         font-size: 30px;
+    //         line-height: 38px;
+    //     &-slider
+    //         &__item
+    //             padding: 0 30px 30px
+    //             &:after, &:before
+    //                 display: none
+    //         &__button
+    //             top: 32px
+    //             left: 50%
+    //             transform: translate(-50%, 0)
+    //             &_prev
+    //                 margin-left: -105px
+    //             &_next
+    //                 margin-left: 105px
+    // .card
+    //     width: 49%
+    //     height: 255px 
+    // .reviews
+    //     &-slider
+    //         &__text
+    //             max-width: 455px
 
-
-
-    .packages
-        padding: 61px 0 80px 0
-        &__title
-            margin-bottom: 43px
-        &__wrapper
-            height: 945px
-            grid-template-columns: 1fr 1fr
-            grid-template-rows: 303px 303px
-            column-gap: 60px
-            row-gap: 23px
-
-    .package
-        &__offer
-            padding: 3px 8px
-            font-size: 9px
-            line-height: 10px
-        &__header
-            margin-bottom: 13px
-        &__title
-            font-size: 13.8998px
-            line-height: 17px
-        &__info
-            padding: 5% 15px 15px 10%
-            &_full
-                font-size: 9.79958px
-                line-height: 160.6%
-                margin-bottom: 21px
-            &_short
-                
-                margin-bottom: 8px
-        &__summary
-            
-            margin-bottom: 4px
-        &__price
-            &_old
-                font-size: 9.04178px
-                line-height: 11px
-                margin-bottom: 3px
-            &_new
-                font-size: 15.5002px
-                line-height: 19px
-        &__button
-            padding: 5px 16px
-            font-size: 9.04178px
-            line-height: 11px
-
-    .package-1
-        &__offer
-            padding: 5px 10px
-            font-size: 12.27px
-            line-height: 15px
-        &__header
-            margin-bottom: 16px
-        &__info
-            padding: 16px 16px 18px 33px
-            &_short
-                margin-bottom: 10px
-        &__summary
-            margin-bottom: 4px
     
     .summary
         &__icon
@@ -421,7 +465,6 @@
             margin-bottom: 56px
     
     .modal
-
         &__dialog
             padding: 20px 50px
             width: 75%
@@ -441,6 +484,10 @@
 
 @media (max-width: 576px)
     // Начало адаптива header
+    .container
+        width: 92%
+    body
+        padding-top: 78px
     .newsletter__subscribe
         width: 100%
     .logo
@@ -455,8 +502,17 @@
                 &_visible
                     max-width: 250px
                     margin-right: 0
-    .hotel-slider
-        height: 250px
+    .hotel
+        &-slider
+            height: 250px
+        &-right
+            flex-wrap: wrap
+    
+    .map
+        width: 100%
+    .booking
+        margin-bottom: 20px
+        width: 100%
     // конец адаптива header
     .reviews
         &__title
@@ -473,6 +529,10 @@
             line-height: 23px
             margin-bottom: 36px
     .packages
+        padding: 30px 0 80px 0
+        &__title
+            margin-top: 0
+            margin-bottom: 42px
         &__wrapper
             height: 2025px
             column-gap: 0
@@ -530,7 +590,7 @@
             font-size: 15.9px
             line-height: 20px
         &__info
-            padding: 3% 40px
+            padding: 5% 40px
             width: 100%
             height: 50%
         &__summary
@@ -555,13 +615,13 @@
                 grid-row: 2
                 grid-column: 1
         &__additional
-            grid-row: 3
-            grid-column: 1
-        &__categories
             grid-row: 4
             grid-column: 1
-        &__legal
+        &__categories
             grid-row: 5
+            grid-column: 1
+        &__legal
+            grid-row: 3
             grid-column: 1
         &__contact
             &-details
@@ -622,6 +682,8 @@
             max-width: 280px
             padding: 76px 0 83px 0
         &__title
+            font-size: 18px
+            line-height: 23px
             margin-bottom: 37px
     .newsletter-title
         font-size: 20px
@@ -629,7 +691,11 @@
         &_strong
             font-size: 30px
             line-height: 38px
-
+    .packages
+        padding: 10px 0 50px 0
+        &__title
+            font-size: 18px
+            line-height: 23px
     .package
         &__info
             padding: 4% 20px
@@ -638,7 +704,7 @@
             line-height: 15px
     .package-1
         &__info
-            padding: 3% 20px
+            padding: 10% 20px
         &__title
             font-size: 13.9px
             line-height: 17px
@@ -717,6 +783,11 @@
         &-slider
             &__text
                 max-width: 219px
+    .activities
+        &__title
+            font-size: 18px
+            line-height: 23px
+
 
 
 // @media (max-height: 768px)
@@ -729,18 +800,18 @@
 //         &__dialog
 //             top: 57%
             
-// @media  (max-height: 590px )
-//     .navbar
-//         &__menu
-//             width: 90%
-//             height: 90%
-//             oveflow-y: scroll
-//     .modal
-//         &__dialog
-//             top: 60%
-//             width: 80%
-//             height: 70%
-//             overflow-y: scroll
+@media  (max-height: 450px )
+    .navbar
+        &__menu
+            width: 90%
+            height: 90%
+            oveflow-y: scroll
+    .modal
+        &__dialog
+            // top: 60%
+            // width: 80%
+            height: 100%
+            overflow-y: scroll
 
 
     

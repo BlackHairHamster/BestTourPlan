@@ -52,7 +52,7 @@ try {
     // Проверяем отравленность сообщения
     if ($mail->send()) {
         $result = "success";
-        header('Location: thankyou-footer.html');
+        header('Location: thankyou.html');
     } else {
         $result = "error";
         header('Location: error.html');
