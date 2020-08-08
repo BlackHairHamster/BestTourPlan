@@ -205,8 +205,10 @@
         &-bottom
             width: 100%
     .modal
+        
         &__dialog
-            padding: 30px 40px
+            padding: 25px 70px
+            width: 55%
         &__message
             max-width: 100%
 @media (max-width: 768px)
@@ -247,6 +249,7 @@
                 bottom: 0
                 background: $dark
                 padding-top: 30px
+                overflow-y: scroll
         &-menu
             flex-direction: column
             &__item
@@ -418,14 +421,19 @@
             margin-bottom: 56px
     
     .modal
+
         &__dialog
-            width: 450px
-            padding: 10px 35px 25px 35px
+            padding: 20px 50px
+            width: 75%
+        &__message
+            width: 100%
+            flex-basis: 100%
         &__contact-form
             padding: 0
         &__button
             order: 1
             width: 100%
+            margin-top: 0
         &__tip
             margin-bottom: 10px
 
@@ -583,10 +591,17 @@
                 align-items: flex-start
                 flex-wrap: wrap
                 width: 100%
+        &__input
+            width: 100%
+            &-group
+                flex-basis: 100%
+                width: 100%
     .modal
         &__dialog
-            width: 80%
-            padding: 0px 20px 15px 20px
+            width: 85%
+            padding: 20px 15px
+
+        
 
 @media (max-width: 320px)
     .container
@@ -682,10 +697,7 @@
         &__item
             &_contact
                 align-self: center
-        &__input
-            width: 100%
-            &-group
-                width: 100%
+
         &__message
             width: 100%
             flex-shrink: 1
@@ -707,6 +719,31 @@
                 max-width: 219px
 
 
+// @media (max-height: 768px)
+//     .modal
+//         &__title
+//             margin-bottom: 20px
+//             &_send
+//                 margin-top: 0
+//                 padding: 20px 30px 30px 30px
+//         &__dialog
+//             top: 57%
+            
+// @media  (max-height: 590px )
+//     .navbar
+//         &__menu
+//             width: 90%
+//             height: 90%
+//             oveflow-y: scroll
+//     .modal
+//         &__dialog
+//             top: 60%
+//             width: 80%
+//             height: 70%
+//             overflow-y: scroll
+
+
+    
 
 
 

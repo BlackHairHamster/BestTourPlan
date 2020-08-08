@@ -209,11 +209,15 @@
     background: transparent
     border-radius: 10px
     overflow: hidden
+    background: url(../img/map-preview.jpg) no-repeat center 
     &__preview
+        display: none
         width: 350px
         height: 213px
         height: 100%
         object-fit: cover
+        &_visible
+            display: block
 .swiper
     &-container
         margin-left: 0
